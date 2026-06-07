@@ -40,9 +40,9 @@ there's no way to ask the system to transcribe the stored audio again. My
 contribution would let the user re-run transcription to get a better result,
 reusing the existing reprocess-summary mechanics as the model.
 
-[Next step before claiming the issue: leave a comment introducing myself and
+Next step before claiming the issue: leave a comment introducing myself and
 confirming with a maintainer that it's still open and unassigned, and ask
-which module the existing reprocess-summary logic lives in.]
+which module the existing reprocess-summary logic lives in.
 
 ---
 
