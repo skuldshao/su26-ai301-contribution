@@ -1,15 +1,49 @@
-# Contribution [#]: [Issue Title]
+# Contribution [#]: [Let user reprocess audio transcription]
 
-**Contribution Number:** [1 / 2 / 3]  
-**Student:** [Your Name]  
-**Issue:** [GitHub issue link]  
+**Contribution Number:** [1]  
+**Student:** [Wanru Skuld Shao]  
+**Issue:** https://github.com/BasedHardware/omi/issues/4601  
 **Status:** [Phase I / Phase II / Phase III / Phase IV] [In Progress / Complete]
 
 ---
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
+## Why I Chose This Issue
+
+I chose issue #4601 "Let user reprocess audio transcription" because it
+builds directly on a feature pattern that already exists in the codebase —
+users can currently reprocess a conversation summary, and this issue asks
+for the same capability applied to the raw audio transcription. That makes
+it a good scope for me: the request isn't an open-ended new system, it's
+extending an established flow, so I have a working reference to study and
+mirror rather than inventing an approach from scratch.
+
+I'm interested in this because:
+1. omi's transcription pipeline runs through speech-to-text providers
+   (Deepgram, Speechmatics, Soniox) on a Python/FastAPI backend, and I want
+   to learn how a production app wires real-time STT together with an option
+   to re-run it on stored audio.
+2. The "reprocess summary" feature gives me a concrete pattern to match,
+   which lowers the risk of a first contribution going off in the wrong
+   direction.
+3. It's a clear, user-facing improvement — the issue notes the live sync
+   transcription has been failing often lately, so a manual reprocess option
+   has obvious value rather than being a cosmetic change.
+4. It touches both the backend (triggering a re-transcription job on saved
+   audio) and the Flutter app (surfacing a "reprocess transcript" action in
+   the UI), so I get exposure to an end-to-end change instead of an isolated
+   snippet.
+
+From reading the issue, I understand the current problem is that once a
+conversation's transcription comes back poor, the user is stuck with it —
+there's no way to ask the system to transcribe the stored audio again. My
+contribution would let the user re-run transcription to get a better result,
+reusing the existing reprocess-summary mechanics as the model.
+
+[Next step before claiming the issue: leave a comment introducing myself and
+confirming with a maintainer that it's still open and unassigned, and ask
+which module the existing reprocess-summary logic lives in.]
 
 ---
 
