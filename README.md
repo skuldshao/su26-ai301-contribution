@@ -1,4 +1,4 @@
-# Contribution [#]: [Let user reprocess audio transcription]
+# Contribution [1]: [Let user reprocess audio transcription]
 
 
 **Contribution Number:** 1
