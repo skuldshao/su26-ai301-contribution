@@ -1,9 +1,10 @@
 # Contribution [#]: [Let user reprocess audio transcription]
 
-**Contribution Number:** [1] 
-**Student:** [Wanru Skuld Shao] 
-**Issue:** [https://github.com/BasedHardware/omi/issues/4601]
-**Status:** [Phase I / Phase II / Phase III / Phase IV] [In Progress / Complete]
+
+**Contribution Number:** 1
+**Student:** Wanru Skuld Shao
+**Issue:** https://github.com/BasedHardware/omi/issues/4601
+**Status:** Phase I - Complete
 
 ---
 
